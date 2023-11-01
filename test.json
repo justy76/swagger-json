@@ -1,12 +1,18 @@
 {
-  "swagger": "2.0",
+  "openapi": "3.0.0",
   "info": {
-    "version": "1.0.0",
-    "title": "Telekom API"
+    "title": "Telekom API",
+    "version": "1.0.0"
   },
   "paths": {
     "/": {
       "get": {
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "operationId": "getTelekom",
         "parameters": [
           {
             "name": "url",
@@ -14,13 +20,27 @@
             "required": true,
             "type": "string"
           }
-        ],
+        ]
+      }
+    },
+    "/api/telekom": {
+      "get": {
         "responses": {
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "operationId": "getTelekomApi",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ]
       }
     }
   }
 }
+
