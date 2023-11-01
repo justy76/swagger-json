@@ -5,24 +5,6 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/": {
-      "get": {
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        },
-        "operationId": "getTelekom",
-        "parameters": [
-          {
-            "name": "url",
-            "in": "query",
-            "required": true,
-            "type": "string"
-          }
-        ]
-      }
-    },
     "/api/telekom": {
       "get": {
         "responses": {
@@ -31,16 +13,7 @@
           }
         },
         "operationId": "getTelekomApi",
-        "parameters": [
-          {
-            "name": "url",
-            "in": "query",
-            "required": true,
-            "type": "string"
-          }
-        ]
       }
     }
   }
 }
-
