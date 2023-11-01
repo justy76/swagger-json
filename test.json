@@ -13,6 +13,11 @@
           }
         },
         "operationId": "getTelekomApi",
+        "servers": [
+          {
+            "url": "https://telekom.sk"
+          }
+        ]
       }
     }
   }
