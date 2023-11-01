@@ -15,7 +15,7 @@
         "operationId": "getTelekomApi",
         "servers": [
           {
-            "url": "https://telekom.sk"
+            "url": "https://www.telekom.sk"
           }
         ]
       }
